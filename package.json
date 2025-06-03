@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "uvi-dev": "uvicorn main:app --reload",
+    "sup-start": "npx supabase start",
+    "sup-stop": "npx supabase stop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "supabase": "^2.23.4"
+  }
+}
