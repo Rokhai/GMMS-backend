@@ -1,6 +1,19 @@
 # Gym Membership Management System Backend
 This repository contains the backend of GMMS
 
+## Clone the project with the submodule
+
+The `supabase` folder is a Git submodule linked to the [GMMS-supabase](<SUPABASE_REPO_URL>) repository.
+
+To clone the projet with the submodule:
+```bash
+git clone --recursive <MAIN_REPO_URL>
+```
+
+Update the submodule after pulling changes
+```bash
+git submodule update --remote
+```
 ## Setup FastAPI & Supabase
 
 ### Python FastAPI
@@ -19,6 +32,24 @@ or
 
 ```
 npm run uvi-dev
+```
+
+### Import the GMMS-supabase module
+
+Add the supabase repository as a submodule
+```bash
+git submodule add <supabase_repo_url> supabase
+```
+
+git submodule add https://github.com/Rokhai/GMMS-supabase.git supabase
+
+Initialize the submodule to fetch it contents
+```bash
+git submodule init
+```
+Update the submodule to fetch its contents
+```bash
+git submodule update
 ```
 
 ### Supabase Setup
